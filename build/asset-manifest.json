@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.3360902d.css",
+    "main.js": "/static/js/main.937f0711.js",
+    "static/media/Ekaritphoto.jpg": "/static/media/Ekaritphoto.166a78e143107efbd289.jpg",
+    "static/media/Ekaritservice1.jpg": "/static/media/Ekaritservice1.bc166fbc370e043e7cf8.jpg",
+    "static/media/background.jpg": "/static/media/background.8561e258e8e8af633f57.jpg",
+    "index.html": "/index.html",
+    "main.3360902d.css.map": "/static/css/main.3360902d.css.map",
+    "main.937f0711.js.map": "/static/js/main.937f0711.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3360902d.css",
+    "static/js/main.937f0711.js"
+  ]
+}
