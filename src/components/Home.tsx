@@ -1,11 +1,12 @@
 import React from "react";
 import { Button, Card } from 'antd';
-import { Phone, Mail, MapPin, Lightbulb, Server, Cpu, Facebook } from "lucide-react";
+import { Phone, Mail, MapPin, Lightbulb, Server, Cpu, Facebook, CupSoda, Book, CaravanIcon, ExpandIcon, MapIcon, GpuIcon, PenIcon, NotebookIcon } from "lucide-react";
 import background from '../images/Ekaritservice1.jpg';
 import background2 from '../images/Ekaritphoto.jpg';
 import logo from '../images/background.jpg';
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import { ExceptionMap } from "antd/es/result";
 
 const cardVariants = {
   hidden: { opacity: 0, y: 40 },
@@ -14,52 +15,64 @@ const cardVariants = {
 
 const services = [
   {
-    title: "Analysis & Design Process",
+    title: "E-Extension Visa တစ်လတိုးပေးခြင်း",
     description:
-      "Business Process Analysis, Data Analysis, Process Re-engineering, System Design, Database Design, Prototype",
+      "လိုအပ်သော စာရွက်စာတမ်းများ",
     icon: <Cpu size={40} className="text-orange-500" />,
   },
   {
-    title: "Website Development",
+    title: "Tourist Visa(TR) လျောက်ပေးခြင်း",
     description:
-      "Web Design, UI/UX, Mobile Responsive, Mobile App Design, Static Website, CMS - Content Management System, SEO Service",
+      "လိုအပ်သော စာရွက်စာတမ်းများ",
     icon: <Lightbulb size={40} className="text-orange-500" />,
   },
   {
-    title: "Application Development",
+    title: "သံရုံးထောက်ခံစာ အမျိုးမျိုး ၀န်ဆောင်မှုပေးခြင်း",
     description:
-      "Web-based Application Development in Microsoft dotNet or Laravel Framework, API First Application using JavaScript and Server-side Framework, iOS and Android Application",
+      "လိုအပ်သော စာရွက်စာတမ်းများ",
     icon: <Server size={40} className="text-orange-500" />,
   },
   {
-    title: "Analysis & Design Process",
+    title: "CI to PJ passport လဲပေးခြင်း",
     description:
-      "Business Process Analysis, Data Analysis, Process Re-engineering, System Design, Database Design, Prototype",
-    icon: <Cpu size={40} className="text-orange-500" />,
+      "လိုအပ်သော စာရွက်စာတမ်းများ",
+    icon: <CupSoda size={40} className="text-orange-500" />,
   },
   {
-    title: "Website Development",
+    title: "PJ to PJ passport လဲပေးခြင်း",
     description:
-      "Web Design, UI/UX, Mobile Responsive, Mobile App Design, Static Website, CMS - Content Management System, SEO Service",
-    icon: <Lightbulb size={40} className="text-orange-500" />,
+      "လိုအပ်သော စာရွက်စာတမ်းများ",
+    icon: <Book size={40} className="text-orange-500" />,
   },
   {
-    title: "Application Development",
+    title: "လေဆိပ်၀န်ဆောင်မှုပေးခြင်း",
     description:
-      "Web-based Application Development in Microsoft dotNet or Laravel Framework, API First Application using JavaScript and Server-side Framework, iOS and Android Application",
-    icon: <Server size={40} className="text-orange-500" />,
+      "လိုအပ်သော စာရွက်စာတမ်းများ",
+    icon: <CaravanIcon size={40} className="text-orange-500" />,
   },
   {
-    title: "Website Development",
+    title: "Visa သက်တမ်းတိုးပေးခြင်း",
     description:
-      "Web Design, UI/UX, Mobile Responsive, Mobile App Design, Static Website, CMS - Content Management System, SEO Service",
-    icon: <Lightbulb size={40} className="text-orange-500" />,
+      "လိုအပ်သော စာရွက်စာတမ်းများ",
+    icon: <ExpandIcon size={40} className="text-orange-500" />,
   },
   {
-    title: "Application Development",
+    title: "ထိုင်း-မြန်မာ ဘာသာပြန် ၀န်ဆောင်မှုပေးခြင်း",
     description:
-      "Web-based Application Development in Microsoft dotNet or Laravel Framework, API First Application using JavaScript and Server-side Framework, iOS and Android Application",
-    icon: <Server size={40} className="text-orange-500" />,
+      "လိုအပ်သော စာရွက်စာတမ်းများ",
+    icon: <MapIcon size={40} className="text-orange-500" />,
+  },
+  {
+    title: "Travel & Tour/Guide ၀န်ဆောင်မှုပေးခြင်း",
+    description:
+      "လိုအပ်သော စာရွက်စာတမ်းများ",
+    icon: <GpuIcon size={40} className="text-orange-500" />,
+  },
+  {
+    title: "DTV/ ED/ Non-B/ Non-O Visa များ၀န်ဆောင်မှုပေးခြင်း",
+    description:
+      "လိုအပ်သော စာရွက်စာတမ်းများ",
+    icon: <GpuIcon size={40} className="text-orange-500" />,
   },
 ];
 
@@ -83,7 +96,7 @@ const Home: React.FC = () => {
           </nav>
         </div>
       </header>
-<div className="container mx-auto py-10"></div>
+      <div className="container mx-auto py-10"></div>
       <section id="home" className="w-full flex flex-col md:flex-row justify-center items-center gap-20 bg-blue-100">
         <img
           src={background2}
@@ -98,8 +111,11 @@ const Home: React.FC = () => {
             <h3 className="text-4xl font-bold">
               Our Services
             </h3><br></br>
-            <p>
+            <p className="font-bold">
               The Services you can get from our company are:
+            </p>
+            <p className="font-bold">
+              Ekarit Visa Service မှရရှိနိုင်သော ၀န်ဆောင်မှုများ
             </p>
           </div>
 
@@ -113,12 +129,16 @@ const Home: React.FC = () => {
               >
                 <Card
                   key={idx}
-                  className="bg-[#1c1c1e] border-4 border-orange-500 rounded-2xl shadow-lg text-white text-center hover:shadow-xl transition-shadow duration-300"
+                  className="bg-gray-700 border-4 border-orange-500 rounded-2xl shadow-lg text-white text-center hover:shadow-xl transition-shadow duration-300"
                   bodyStyle={{ padding: "30px" }}
                 >
                   <div className="flex justify-center mb-4">{service.icon}</div>
                   <h3 className="text-xl font-bold mb-3">{service.title}</h3>
-                  <p className="text-sm text-gray-300">{service.description}</p>
+                  <a href="https://www.facebook.com/profile.php?id=61559913904409"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:underline text-blue-400 font-bold">
+                    <p className="text-sm text-black-300 font-bold">{service.description}</p></a>
                 </Card>
               </motion.div>
             ))}
@@ -149,11 +169,20 @@ const Home: React.FC = () => {
                 whileHover={{ scale: 1.05 }}
               >
                 <Card
-                  key={1}
-                  className="w-[350px] h-auto p-8 bg-[#1c1c1e] border-4 border-orange-500 rounded-2xl shadow-lg text-white text-center "
+                  key={2}
+                  className="w-[350px] h-auto p-6 bg-blue-300 border border-orange-400 rounded-2xl shadow-md text-black text-left transition-all duration-300 hover:shadow-orange-500/40"
                 >
-                  <h1 className="text-4xl font-bold ">Welcome to Our Service</h1>
-                  <p className="mt-4 text-lg">We deliver quality with speed.</p>
+                  <div className="flex items-center gap-4 mb-4">
+                    <div className="bg-orange-500 p-2 rounded-full">
+                      <NotebookIcon size={30} className="text-white" />
+                    </div>
+                    <h2 className="text-2xl font-semibold tracking-tight">Fast & Reliable</h2>
+                  </div>
+
+                  <p className="text-base text-black-300 leading-relaxed">
+                    We provide efficient and reliable services tailored to your needs. Experience
+                    top-tier service with speedy and safety.
+                  </p>
                 </Card>
               </motion.div>
             </div>
@@ -180,7 +209,7 @@ const Home: React.FC = () => {
             </div>
             <p className="text-black-500">
               Your one-stop service for visa process. Contact us today to learn more
-              about how our services can help your visa and others save and easy!
+              about how our services can help your visa and others easily!
             </p>
           </div>
 
