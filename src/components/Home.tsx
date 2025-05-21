@@ -1,6 +1,6 @@
 import React from "react";
 import { Button, Card } from 'antd';
-import { Phone, Mail, MapPin, Lightbulb, Server, Cpu, Facebook, CupSoda, Book, CaravanIcon, ExpandIcon, MapIcon, GpuIcon, PenIcon, NotebookIcon } from "lucide-react";
+import { Phone, Mail, MapPin, Lightbulb, Server, Cpu, Facebook, CupSoda, Book, CaravanIcon, ExpandIcon, MapIcon, GpuIcon, PenIcon, NotebookIcon, LocateIcon, CarIcon, CarTaxiFrontIcon, Caravan, GoalIcon, BusIcon, MapPinCheckIcon } from "lucide-react";
 import background from '../images/Ekaritservice1.jpg';
 import background2 from '../images/Ekaritphoto.jpg';
 import logo from '../images/background.jpg';
@@ -153,37 +153,47 @@ const Home: React.FC = () => {
           </div>
 
           <div className="flex flex-col md:flex-row items-center justify-center gap-8">
-            {/* Image on the left */}
-            <img
-              src={background}
-              alt="Ekarit 1"
-              className="w-full md:w-1/2 h-auto object-contain"
-            />
-
-            {/* Card on the right */}
-            <div className="flex justify-center">
+            <div className="w-1/2">
               <motion.div
                 variants={cardVariants}
                 initial="hidden"
                 animate="visible"
                 whileHover={{ scale: 1.05 }}
               >
-                <Card
-                  key={2}
-                  className="w-[350px] h-auto p-6 bg-blue-300 border border-orange-400 rounded-2xl shadow-md text-black text-left transition-all duration-300 hover:shadow-orange-500/40"
-                >
-                  <div className="flex items-center gap-4 mb-4">
-                    <div className="bg-orange-500 p-2 rounded-full">
-                      <NotebookIcon size={30} className="text-white" />
-                    </div>
-                    <h2 className="text-2xl font-semibold tracking-tight">Fast & Reliable</h2>
-                  </div>
+                <div className="gap-4 mb-4">
+                </div>
 
-                  <p className="text-base text-black-300 leading-relaxed">
-                    We provide efficient and reliable services tailored to your needs. Experience
-                    top-tier service with speedy and safety.
-                  </p>
-                </Card>
+                <p>
+                  ကျွန်တော်တို့ ကုမ္ပဏီသည် Visa Service အတွက် ကျွမ်းကျင်သော သူများနှင့် ဖွဲ့စည်းထားသည့် တရားဝင်လိုင်စင်ရ ကုမ္ပဏီဖြစ်ပြီး
+                  ဝန်ဆောင်မှုပေးသည့်အခါ လူကြီးမင်းတို့ကို ကူညီသည့်အနေဖြင့် စာရွက်စာတမ်းပြင်ဆင်တာကနေ
+                  သံရုံးတင်တာအထိအပြင် အင်တာဗျူးဝင်ဖို့ရှိတယ်ဆိုရင်လည်း  သေချာ တိကျ  ရှင်းပြ နိုင်တဲ့ အဖွဲ့သားတွေရှိပါတယ်။
+                  ဒါကြောင့် ဝန်ဆောင်မှု အပ်လိုက်ပြီဆိုရင် စိတ်ပူစရာ မလိုတော့ဘဲနဲ့ အစအဆုံးစီစဥ်ဆောင်ရွက်ပေးမှာဖြစ်ပါတယ်၊</p><br />
+                <p className="font-bold">ဝန်ဆောင်မှုများ</p>
+                <p>၁.အကြံဉာဏ်ပေးခြင်း  </p>
+                <p>လူကြီးမင်းတို့နဲ့ ကိုက်ညီတဲ့ Visa အမျိုးအစားသိရအောင် နှင့် နားလည်အောင် အကြံဉာဏ်ပေးပါတယ်။</p>
+                <p>၂.ကြိုတင်စစ်ဆေးပေးခြင်း</p>
+                <p>လိုအပ်မှု လိုအပ်ချက် မရှိစေရအောင် ပြည့်စုံရအောင်
+                  စာရွက်စာတမ်းတွေကိုကြိုတင်စစ်ဆေးပေးပါတယ်။</p>
+                <p>၃.Visaအမျိုးအစားများမှာ DTV Visa / TR Visa /  ED Visa / Non-B / Non-O နှင့် တခြားဝန်ဆောင်မှုများစွာရရှိမှာ
+                  ဖြစ်ပါတယ်။ </p>
+                <p>ဒါ့အပြင် ထိုင်းနိုင်ငံအတွင်း တခြားသော</p>
+                <p> #ThaiMyanmarinterperter ထိုင်းမြန်မာ ဘာသာပြန် - စကားပြန်</p>
+                <p>#thailandtravel&tour ထိုင်းနိုင်ငံအတွင်းခရီးသွားဝန်ဆောင်မှု</p>
+                <p>#Myanmarembassypjpassport မြန်မာသံရုံးမှာပတ်စပိုစ်ချိန်းပေးခြင်း
+                  <p>#bankaccount ဘဏ်အကောင့်ဖွင့်ပေးခြင်း</p>
+                  <p>#Pj-Pj and CI-Pj Ci Passport အစိမ်း မှ Pj passport အနီ ချိန်းပေးခြင်း</p>
+                  <p>#Extension သက်တမ်း 1 လ တိုးပေးခြင်း</p>
+                  <p>#Retirement သက်ကြီးဗီဇာပြုလုပ်ပေးခြင်း</p>
+                  <p>#Education ကျောင်းအပ်ပေးခြင်း</p>
+                  <p>#လေဆိပ်ဝန်ဆောင်မှု</p>
+                  အစရှိသည့် Service တို့ကို ဝန်ဆောင်မှုပေးပါသည်။</p>
+                <p>#တာဝန်ယူမှု
+                  ဝန်ဆောင်မှုပေးထားသည့် Service ပေါ်မူတည်ပြီး
+                  တာဝန်ယူမှု တာဝန်ခံမှုတို့ကို တိတိကျကျ ပြောပြ ရှင်းပြသွားပြီး ဆောင်ရွက်ပေးပါသည်။
+
+                </p>
+
+
               </motion.div>
             </div>
           </div>
@@ -192,9 +202,9 @@ const Home: React.FC = () => {
 
       <section id="contact" className="bg-blue-100 text-black px-6 py-10">
         <div className="container mx-auto px-6">
-          <h3 className="text-4xl font-bold text-center mb-6">Contact Us</h3>
+          <h3 className="text-4xl font-bold text-center mb-6 ">Contact Us</h3>
         </div>
-        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 text-black">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 text-black py-4">
 
           <div>
             <div className="flex items-center mb-4">
@@ -208,6 +218,8 @@ const Home: React.FC = () => {
               </div>
             </div>
             <p className="text-black-500">
+              We provide efficient and reliable services tailored to your needs. Experience
+              top-tier service with speedy and safety.
               Your one-stop service for visa process. Contact us today to learn more
               about how our services can help your visa and others easily!
             </p>
@@ -229,15 +241,26 @@ const Home: React.FC = () => {
             <ul className="space-y-4 text-black-300">
               <li className="flex items-center gap-2">
                 <Phone className="text-orange-500" size={18} />
-                +959 051984663
+                +959 23413777 ,+959 71896725,+959 58430508
               </li>
               <li className="flex items-center gap-2">
                 <Mail className="text-orange-500" size={18} />
                 contact@ekaritvisa.com
               </li>
               <li className="flex items-start gap-2">
-                <MapPin className="text-orange-500" size={18} />
-                No. 456, MaharSwe Rd, Yangon 1341
+                <BusIcon className="text-orange-500" size={18} />
+                399/17 Soi Chaengwattana 6/2-1 Talat Bang Khen Subdistrict, Laksi district, Bangkok, 10210
+              </li>
+              <li className="flex items-start gap-2">
+                <a
+                  href="https://maps.app.goo.gl/8xoCMHy4Y9nFaEf66"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-start gap-2 text-blue-400 font-bold transition-colors duration-200"
+                >
+                  <MapPinCheckIcon className="text-orange-500" size={18} />
+                  Ekarit Office Location
+                </a>
               </li>
               <li className="flex items-start gap-2 ">
                 <Facebook className="text-orange-500" size={18} />
